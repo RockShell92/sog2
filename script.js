@@ -3,23 +3,28 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
     document.getElementById("logo").style.width = "7rem";
   } else {
-    document.getElementById("logo").style.width = "15rem";
-  }
-  if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
-    document.getElementById("logo").style.width = "7rem";
-  } else {
+    document.getElementById("logo").style.width = "10rem";
   }
 
-  if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
     document.getElementById("awg").style.display = "none";
   } else {
     document.getElementById("awg").style.display = "flex";
   }
 
-  if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
     document.getElementById("pn").style.display = "none";
   } else {
     document.getElementById("pn").style.display = "flex";
@@ -1681,7 +1686,7 @@ function scrollFunction() {
                 inactiveClasses:
                   "bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800",
               },
-              interval: 5e3,
+              interval: 7e3,
               onNext: function () {},
               onPrev: function () {},
               onChange: function () {},
