@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Ovation Graphics</title>
+    <link rel="stylesheet" href="sog.css" />
+    <link
+      rel="shortcut icon"
+      href="././assets/logo/favicon.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="source/stylesheets/index.scss build/stylesheets/index.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://use.typekit.net/yna2abu.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              poppins: ['"poppins"', "sans-serif"],
+              roboto: ['"roboto"', "sans-serif"],
+            },
+            colors: {
+              clifford: "#da373d",
+              sogblu: "#016bb3",
+              soggrey: "#696969",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-fixed md:bg-cover lg:bg-cover bg-cover">
+    <div class="fixed -z-10 mt-20 h-full lg:hidden md:hidden visible">
+      <img src="./assets/logo/background-all-mob.png" alt="" />
+    </div>
+    <div class="fixed -z-10 mt-20 h-full lg:visible md:visible invisible">
+      <img src="./assets/logo/background-all.png" alt="" />
+    </div>
+    <div class="nav-mob sm:hidden md:visible lg:visible fixed w-screen top-0">
+      <nav
+        class="bg-white border-gray-200 bg-[#222d3e] top-nav flex justify-between p-4 background-image-light"
+      >
+        <div class="noend flex justify-start absolute">
+          <div class="hamburg">
+            <nav style="min-height: 10vh">
+              <label
+                id="hamburger-icon"
+                class="text-white fixed flex justify-start text-2xl"
+                for="menu-toggle"
+                >&#9776;</label
+              >
+              <input type="checkbox" id="menu-toggle" />
+              <ul
+                id="menu"
+                class="mob-dropdown text-blue-900 px-8 py-7 font-poppins font-medium text-sogblu background-image-light"
+              >
+                <a href="./index.html"><li>HOME</li></a>
+                <a href="./signs.html"><li>SIGNS</li></a>
+                <a href="./products.html"><li>PRODUCTS</li></a>
+                <a href="./services.html"><li>SERVICES</li></a>
+                <!-- <a href="./contact.html"><li>CONTACT</li></a> -->
+                <a href="./portfolio.html"><li>PORTFOLIO</li></a>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="mx-5 justify-end p-1">
+          <a href="./index.html" class="flex justify-center">
+            <img
+              src="./assets/logo/blue-logo.svg"
+              class="w-20"
+              alt="SOG-Logo"
+            />
+          </a>
+          <a href="tel:6158518222" class="text-xs text-white hover:underline"
+            >(615) 851-8222</a
+          >
+        </div>
+
+        <div class="flex justify-end">
+          <a class="" href="./awg.html"
+            ><img class="w-20" src="./assets/awg-logo.png" alt="awg-logo"
+          /></a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- nav dsk -->
+    <div class="nav-dsk w-screen pb-4 fixed">
+      <nav
+        class="bg-white border-gray-200 bg-[#222d3e] top-nav background-image-light"
+      >
+        <div
+          class="flex flex-wrap items-center mx-auto max-w-screen-xl px-2 md:px-6 justify-between"
+        >
+          <div class="logo-pn flex items-baseline">
+            <a href="./index.html" class="flex relative left-0 top-16">
+              <img
+                src="./assets/logo/blue-logo.svg"
+                class="mr-3 w-60 z-10"
+                id="logo"
+                alt="SOG-Logo"
+              />
+            </a>
+            <a
+              href="tel:6158518222"
+              class="text-xl font-semibold text-white hover:underline font-roboto"
+              id="pn"
+              >(615) 851-8222</a
+            >
+          </div>
+          <div class="flex items-center">
+            <a class="awg" href="./awg.html"
+              ><img
+                class="w-32"
+                id="awg"
+                src="./assets/awg-logo.png"
+                alt="awg-logo"
+            /></a>
+          </div>
+        </div>
+      </nav>
+      <nav class="bg-white bottom-nav shadow-lg">
+        <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
+          <div class="flex items-center justify-end">
+            <ul
+              class="flex flex-row mt-0 mr-6 space-x-8 text-3xl font-poppins font-medium"
+            >
+              <li>
+                <a href="./index.html" class="text-sogblu hover:underline"
+                  >HOME</a
+                >
+              </li>
+              <!-- <li>
+                <a href="#about" class="text-sogblu hover:underline">ABOUT</a>
+              </li> -->
+              <li>
+                <a href="./signs.html" class="text-sogblu hover:underline"
+                  >SIGNS</a
+                >
+              </li>
+              <li>
+                <a href="./products.html" class="text-sogblu hover:underline"
+                  >PRODUCTS</a
+                >
+              </li>
+              <li>
+                <a href="./services.html" class="text-sogblu hover:underline"
+                  >SERVICES</a
+                >
+              </li>
+              <!-- <li>
+                <a href="./contact.html" class="text-sogblu hover:underline"
+                  >CONTACT</a
+                >
+              </li> -->
+              <li>
+                <a href="./portfolio.html" class="text-sogblu hover:underline"
+                  >PORTFOLIO</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="h-45-15"></div>
+    <div class="flex m-10">
+      <h1
+        class="lg:text-6xl md:text-6xl text-2xl text-white font-poppins justify-center mt-10 text-center"
+      >
+        Serving Nashville and others for over 10 years
+      </h1>
+    </div>
+    <div class="background-image-light">
+      <div
+        class="grid md:grid-cols-2 sm:grid-cols-1 justify-items-center contact m-10"
+      >
+        <div class="text-blue-900 text-center lg:text-2xl md:text-2xl">
+          <div
+            id="contact"
+            class="title text-sogblu lg:text-8xl md:text-8xl text-2xl leading-tight font-semibold mb-2 font-roboto"
+          >
+            <h1>CONTACT</h1>
+          </div>
+          <div class="font-roboto text-soggrey">
+            <br />
+
+            Sign Ovation Graphics <br />
+            (615) 851-8222 <br />
+            contact@signovationgraphics.com <br />
+            707 Space Park N, <br />
+            Goodlettsville, TN 37072 <br />
+            Mon-Thurs: 8am-4pm <br />
+            Fri: 8am-2pm <br />
+            Sat-Sun: Closed <br />
+          </div>
+          <br />
+        </div>
+
+        <div class="grid md:grid-cols-2 sm:grid-cols-1 sm">
+          <div class="contact-form">
+            <form class="w-full max-w-lg sm:w-screen">
+              <div class="flex mr-0 mb-6 sm\:w-screen name">
+                <div class="w-full md:w-1/2 px-1 mx-5 mb-6 md:mb-0">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-first-name"
+                  >
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-first-name"
+                    type="text"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="w-full md:w-1/2 mx-6">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-last-name"
+                  >
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-last-name"
+                    type="text"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-wrap mx-3 mb-6">
+                <div class="w-full mx-3">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-password"
+                  >
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="email"
+                    type="email"
+                    placeholder="E-mail"
+                  />
+                  <p class="text-gray-600 text-xs italic"></p>
+                </div>
+              </div>
+              <div class="flex flex-wrap mx-3 mb-6">
+                <div class="w-full mx-3">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-password"
+                  >
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="phone"
+                    input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number"
+                  />
+                  <p class="text-gray-600 text-xs italic"></p>
+                </div>
+              </div>
+              <div class="flex flex-wrap mx-3 mb-6">
+                <div class="w-full mx-3">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-password"
+                  >
+                  </label>
+                  <textarea
+                    class="no-resize appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                    id="message"
+                    placeholder="Message"
+                  ></textarea>
+                  <p class="text-gray-600 text-xs italic"></p>
+                </div>
+              </div>
+              <div class="md:flex md:items-center">
+                <div class="md:w-1/3 ml-6">
+                  <button
+                    class="shadow bg-sogblu hover:text-white text-gray-300 hover:bg-blue-800 focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded"
+                    type="button"
+                  >
+                    Send
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3214.887421090162!2d-86.7082717240703!3d36.315036794897836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886444861b68a8fb%3A0x689078e71895dd7b!2s707%20Space%20Park%20N%2C%20Goodlettsville%2C%20TN%2037072!5e0!3m2!1sen!2sus!4v1671129020581!5m2!1sen!2sus"
+        class="w-screen h-50"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div
+      class="footer grid md:grid-cols-3 lg:grid-cols-3 grid-cols-1 background-image-dark p-10 md:text-left lg:text-left text-center"
+    >
+      <div class="logo my-2 flex justify-center">
+        <img class="mx-5 mb-5" src="./assets/logo/blue-logo.svg" alt="" />
+      </div>
+      <div class="business-hours my-2">
+        <div class="text-sogblu font-poppins text-4xl">Business Hours</div>
+
+        <div class="text-soggrey font-roboto text-2xl">
+          Mon-Thurs: 8am-4pm <br />
+          Fri: 8am-2pm <br />
+          Sat-Sun: Closed <br />
+        </div>
+      </div>
+      <div class="contact my-2">
+        <div>
+          <div class="text-sogblu font-poppins text-4xl">Contact</div>
+
+          <div class="text-soggrey font-roboto lg:text-2xl md:text-2xl text-xl">
+            <a href="tel:6158518222">(615) 851-8222</a> <br />
+            <a href="mailto:contact@signovationgraphics.com"
+              >contact@signovationgraphics.com</a
+            >
+            <br />
+            707 Space Park N, <br />
+            Goodlettsville, TN 37072 <br />
+          </div>
+          <div class="flex justify-center p-1 gap-4 my-2">
+            <a href="https://www.facebook.com/SignOvationGraphics/"
+              ><img
+                class="w-20"
+                src="./assets/other/facebook.png"
+                alt="facebook-logo"
+            /></a>
+
+            <a href="https://www.instagram.com/signovationgraphics/"
+              ><img
+                class="w-20"
+                src="./assets/other/insta.png"
+                alt="instagram-logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

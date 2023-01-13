@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Ovation Graphics</title>
+    <link rel="icon" type="image/x-icon" href="././assets/logo/blue-logo.svg" />
+    <link rel="stylesheet" href="sog.css" />
+    <link
+      rel="stylesheet"
+      href="source/stylesheets/index.scss build/stylesheets/index.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://use.typekit.net/yna2abu.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              poppins: ['"poppins"', "sans-serif"],
+              roboto: ['"roboto"', "sans-serif"],
+            },
+            colors: {
+              clifford: "#da373d",
+              sogblu: "#016bb3",
+              soggrey: "#696969",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-fixed md:bg-cover lg:bg-cover bg-cover">
+    <div class="fixed -z-10 mt-20 h-full lg:hidden md:hidden visible">
+      <img src="./assets/logo/background-all-mob.png" alt="" />
+    </div>
+    <div class="fixed -z-10 mt-20 h-full lg:visible md:visible invisible">
+      <img src="./assets/logo/background-all.png" alt="" />
+    </div>
+    <div class="nav-mob sm:hidden md:visible lg:visible fixed w-screen top-0">
+      <nav
+        class="bg-white border-gray-200 bg-[#222d3e] top-nav flex justify-between p-4 background-image-light"
+      >
+        <div class="noend flex justify-start absolute">
+          <div class="hamburg">
+            <nav style="min-height: 10vh">
+              <label
+                id="hamburger-icon"
+                class="text-white fixed flex justify-start text-2xl"
+                for="menu-toggle"
+                >&#9776;</label
+              >
+              <input type="checkbox" id="menu-toggle" />
+              <ul
+                id="menu"
+                class="mob-dropdown text-blue-900 px-8 py-7 font-poppins font-medium text-sogblu background-image-light"
+              >
+                <a href="./index.html"><li>HOME</li></a>
+                <a href="./signs.html"><li>SIGNS</li></a>
+                <a href="./products.html"><li>PRODUCTS</li></a>
+                <a href="./services.html"><li>SERVICES</li></a>
+                <!-- <a href="./contact.html"><li>CONTACT</li></a> -->
+                <a href="./portfolio.html"><li>PORTFOLIO</li></a>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="mx-5 justify-end p-1">
+          <a href="./index.html" class="flex justify-center">
+            <img
+              src="./assets/logo/blue-logo.svg"
+              class="w-20"
+              alt="SOG-Logo"
+            />
+          </a>
+          <a href="tel:6158518222" class="text-xs text-white hover:underline"
+            >(615) 851-8222</a
+          >
+        </div>
+
+        <div class="flex justify-end">
+          <a class="" href="./awg.html"
+            ><img class="w-20" src="./assets/awg-logo.png" alt="awg-logo"
+          /></a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- nav dsk -->
+    <div class="nav-dsk w-screen pb-4 fixed">
+      <nav
+        class="bg-white border-gray-200 bg-[#222d3e] top-nav background-image-light"
+      >
+        <div
+          class="flex flex-wrap items-center mx-auto max-w-screen-xl px-2 md:px-6 justify-between"
+        >
+          <div class="logo-pn flex items-baseline">
+            <a href="./index.html" class="flex relative left-0 top-16">
+              <img
+                src="./assets/logo/blue-logo.svg"
+                class="mr-3 w-60 z-10"
+                id="logo"
+                alt="SOG-Logo"
+              />
+            </a>
+            <a
+              href="tel:6158518222"
+              class="text-xl font-semibold text-white hover:underline font-roboto"
+              id="pn"
+              >(615) 851-8222</a
+            >
+          </div>
+          <div class="flex items-center">
+            <a class="awg" href="./awg.html"
+              ><img
+                class="w-32"
+                id="awg"
+                src="./assets/awg-logo.png"
+                alt="awg-logo"
+            /></a>
+          </div>
+        </div>
+      </nav>
+      <nav class="bg-white bottom-nav shadow-lg">
+        <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
+          <div class="flex items-center justify-end">
+            <ul
+              class="flex flex-row mt-0 mr-6 space-x-8 text-3xl font-poppins font-medium"
+            >
+              <li>
+                <a href="./index.html" class="text-sogblu hover:underline"
+                  >HOME</a
+                >
+              </li>
+              <!-- <li>
+                <a href="#about" class="text-sogblu hover:underline">ABOUT</a>
+              </li> -->
+              <li>
+                <a href="./signs.html" class="text-sogblu hover:underline"
+                  >SIGNS</a
+                >
+              </li>
+              <li>
+                <a href="./products.html" class="text-sogblu hover:underline"
+                  >PRODUCTS</a
+                >
+              </li>
+              <li>
+                <a href="./services.html" class="text-sogblu hover:underline"
+                  >SERVICES</a
+                >
+              </li>
+              <!-- <li>
+                <a href="./contact.html" class="text-sogblu hover:underline"
+                  >CONTACT</a
+                >
+              </li> -->
+              <li>
+                <a href="./portfolio.html" class="text-sogblu hover:underline"
+                  >PORTFOLIO</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="h-45-15"></div>
+    <div class="flex m-10">
+      <h1
+        class="lg:text-6xl md:text-6xl text-2xl text-white font-poppins justify-center mt-10 text-center"
+      >
+        SIGNS
+      </h1>
+    </div>
+
+    <div class="background-image-light">
+      <div class="content md:mx-10 lg:mx-10 sm:mx-1 py-10">
+        <div class="flex justify-center m-10" id="signs">
+          <div class="block p-7 rounded-lg shadow-lg bg-white w-screen">
+            <div class="title-card justify-center flex">
+              <h5
+                class="text-sogblu lg:text-6xl md:text-6xl text-xl leading-tight font-semibold mb-2"
+              >
+                WHAT WE CAN DO
+              </h5>
+            </div>
+            <div
+              class="grid md:grid-cols-2 sm:grid-cols-1 justify-items-center signs mx-10"
+            >
+              <div class="card-txt">
+                <ul class="text-soggrey mb-4">
+                  <li class="lg:text-3xl md:text-3xl text-lg">
+                    Vehicle Magnets
+                  </li>
+                  <li class="lg:text-3xl md:text-3xl text-lg">
+                    Retractable Banners
+                  </li>
+                  <li class="lg:text-3xl md:text-3xl text-lg">Yard Signs</li>
+                  <li class="lg:text-3xl md:text-3xl text-lg">
+                    Vinyl Graphics
+                  </li>
+                  <li class="lg:text-3xl md:text-3xl text-lg">
+                    Trade Show Displays
+                  </li>
+                  <li class="lg:text-3xl md:text-3xl text-lg">Event Banners</li>
+                </ul>
+              </div>
+              <div class="card-txt">
+                <ul class="text-soggrey text-lg mb-4">
+                  <li class="lg:text-3xl md:text-3xl text-lg">Rolled Canvas</li>
+                  <li class="lg:text-3xl md:text-3xl text-lg">
+                    Interior & Exterior Banners
+                  </li>
+                  <li class="lg:text-3xl md:text-3xl text-lg">
+                    Business Signage
+                  </li>
+                  <li class="lg:text-3xl md:text-3xl text-lg">
+                    Vehicle Graphics
+                  </li>
+                  <li class="lg:text-3xl md:text-3xl text-lg">
+                    Campaign Signage
+                  </li>
+                  <li class="lg:text-3xl md:text-3xl text-lg">
+                    Floor Graphics
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid md:grid-cols-2 sm:grid-cols-1 justify-items-center signs m-10 lg:gap-32 md:gap-32 gap-0"
+        >
+          <div>
+            <div
+              class="banners text-sogblu lg:text-6xl md:text-6xl text-3xl leading-tight font-semibold mb-2"
+            >
+              BANNERS
+            </div>
+            <div class="text-soggrey text-lg mb-4">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              quaerat quod, quibusdam suscipit necessitatibus corrupti qui totam
+              velit sequi? Quia consequuntur aliquam amet delectus aperiam sed
+              cupiditate et illum aspernatur. Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Optio minus exercitationem
+              doloremque nobis reiciendis, eaque ea deleniti? Cumque illum
+              nostrum nihil dolor, deleniti odio rem recusandae, eum in, ipsa
+              voluptatibus. Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Odio illo quo rerum molestias quisquam? Voluptatum sint
+              eaque perferendis dicta eum minus rerum labore id, amet dolore
+              praesentium commodi incidunt consequatur.3
+            </div>
+          </div>
+          <div>
+            <img src="./assets/photos/baseball.png" alt="" />
+          </div>
+        </div>
+        <div
+          class="grid md:grid-cols-2 sm:grid-cols-1 justify-items-center signs mx-10 lg:gap-32 md:gap-32 gap-0"
+        >
+          <div class="lg:order-none md:order-none order-1 mt-0">
+            <img src="./assets/photos/jeep.png" alt="" />
+          </div>
+          <div>
+            <div
+              class="banners text-sogblu lg:text-6xl md:text-6xl text-3xl leading-tight font-semibold mb-2"
+            >
+              YARD SIGNS
+            </div>
+            <div class="text-soggrey text-lg lg:mb-4 md:mb-4 mb-0">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              quaerat quod, quibusdam suscipit necessitatibus corrupti qui totam
+              velit sequi? Quia consequuntur aliquam amet delectus aperiam sed
+              cupiditate et illum aspernatur. Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Optio minus exercitationem
+              doloremque nobis reiciendis, eaque ea deleniti? Cumque illum
+              nostrum nihil dolor, deleniti odio rem recusandae, eum in, ipsa
+              voluptatibus. Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Odio illo quo rerum molestias quisquam? Voluptatum sint
+              eaque perferendis dicta eum minus rerum labore id, amet dolore
+              praesentium commodi incidunt consequatur.3
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="footer grid md:grid-cols-3 lg:grid-cols-3 grid-cols-1 background-image-dark p-10 md:text-left lg:text-left text-center"
+    >
+      <div class="logo my-2">
+        <img class="mx-5 mb-5" src="./assets/logo/blue-logo.svg" alt="" />
+      </div>
+      <div class="business-hours my-2">
+        <div class="text-sogblu font-poppins text-4xl">Business Hours</div>
+
+        <div class="text-soggrey font-roboto text-2xl">
+          Mon-Thurs: 8am-4pm <br />
+          Fri: 8am-2pm <br />
+          Sat-Sun: Closed <br />
+        </div>
+      </div>
+      <div class="contact my-2">
+        <div>
+          <div class="text-sogblu font-poppins text-4xl">Contact</div>
+          <div class="text-soggrey font-roboto lg:text-2xl md:text-2xl text-xl">
+            <a href="tel:6158518222">(615) 851-8222</a> <br />
+            <a href="mailto:contact@signovationgraphics.com"
+              >contact@signovationgraphics.com</a
+            >
+            <br />
+            707 Space Park N, <br />
+            Goodlettsville, TN 37072 <br />
+          </div>
+          <div class="flex justify-center p-1 gap-4 my-2">
+            <a href="https://www.facebook.com/SignOvationGraphics/"
+              ><img
+                class="w-20"
+                src="./assets/other/facebook.png"
+                alt="facebook-logo"
+            /></a>
+
+            <a href="https://www.instagram.com/signovationgraphics/"
+              ><img
+                class="w-20"
+                src="./assets/other/insta.png"
+                alt="instagram-logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
