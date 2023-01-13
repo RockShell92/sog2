@@ -1,12 +1,11 @@
 * {
-  padding: 0;
-  margin: 0;
-}
-
-* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/logo/background-all.png);
 }
 /* always have */
 .background-image-light {
