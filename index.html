@@ -57,7 +57,7 @@
   </head>
   <body class="bg-fixed bg-center bg-cover">
     <div
-      class="nav-mob sm:hidden md:visible lg:visible fixed w-screen top-0 shadow-sm"
+      class="nav-mob sm:hidden md:visible lg:visible top-0 shadow-sm w-screen sticky z-50"
     >
       <nav
         class="bg-white border-gray-200 bg-[#222d3e] top-nav flex justify-between p-4 background-image-light m-0 z-50"
@@ -190,7 +190,7 @@
 
     <div id="default-carousel" class="relative w-screen" data-carousel="slide">
       <!-- Carousel wrapper -->
-      <div class="relative w-screen h-75 overflow-hidden rounded-lg">
+      <div class="relative w-screen overflow-hidden car">
         <!-- Item 1 -->
         <div class="hidden duration-1000 ease-in-out" data-carousel-item>
           <span
@@ -312,20 +312,22 @@
       </button>
     </div>
 
-    <div class="flex lg:m-10 md:m-10 m-5">
-      <h1
-        class="lg:text-6xl md:text-6xl text-2xl text-white font-poppins justify-center mt-10 text-center"
-      >
-        Serving Nashville and others for over 10 years
-      </h1>
-    </div>
     <div class="background-image-light">
       <div class="content md:mx-10 lg:mx-10 sm:mx-1 py-10">
+        <div class="flex lg:m-10 md:m-10 m-5">
+          <div class="justify-center justify-items-center">
+            <h1
+              class="lg:text-8xl md:text-5xl text-2xl text-white font-poppins justify-self-center mt-10 text-center leading-loose"
+            >
+              Serving the Nashville area and others for over 10&nbsp;years
+            </h1>
+          </div>
+        </div>
         <div
           class="grid md:grid-cols-2 sm:grid-cols-1 justify-items-center about mx-10"
           id="about"
         >
-          <div class="text-sogblu text-center text-2xl">
+          <div class="text-sogblu text-center lg:text-4xl md:text-2xl text-2xl">
             <div class="font-roboto text-left">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -357,18 +359,15 @@
             >
               <div class="card-txt">
                 <div class="title-card flex">
-                  <div
-                    class="title xtra lg:text-8xl md:text-8xl text-2xl align-center text-sogblu"
-                  >
-                    <a href="./signs.html">&#8942;</a>
-                  </div>
                   <h5
-                    class="text-sogblu lg:text-8xl md:text-8xl text-2xl leading-tight font-semibold mb-2 font-roboto"
+                    class="text-sogblu lg:text-8xl md:text-7xl text-5xl leading-tight font-semibold mb-2 font-roboto align-center hover:underline"
                   >
-                    SIGNS
+                    <a href="./signs.html">SIGNS</a>
                   </h5>
                 </div>
-                <h3 class="text-sogblu text-xl leading-tight font-medium mb-2">
+                <h3
+                  class="text-sogblu lg:text-2xl md:text-xl text- leading-tight font-medium mb-2"
+                >
                   tagline
                 </h3>
                 <p class="text-soggrey text-base mb-4">
@@ -388,15 +387,10 @@
             >
               <div class="card-txt">
                 <div class="title-card flex">
-                  <div
-                    class="xtra lg:text-8xl md:text-8xl text-2xl align-center text-sogblu"
-                  >
-                    <a href="./products.html">&#8942;</a>
-                  </div>
                   <h5
-                    class="title text-sogblu leading-tight font-semibold mb-2 lg:text-8xl md:text-8xl text-2xl font-roboto"
+                    class="text-sogblu lg:text-8xl md:text-7xl text-5xl leading-tight font-semibold mb-2 font-roboto align-center hover:underline"
                   >
-                    PRODUCTS
+                    <a href="./products.html">PRODUCTS</a>
                   </h5>
                 </div>
                 <h3 class="text-sogblu text-xl leading-tight font-medium mb-2">
@@ -419,15 +413,10 @@
             >
               <div class="card-txt">
                 <div class="title-card flex">
-                  <div
-                    class="xtra lg:text-8xl md:text-8xl text-2xl align-center text-sogblu"
-                  >
-                    <a href="./services.html">&#8942;</a>
-                  </div>
                   <h5
-                    class="title text-sogblu lg:text-8xl md:text-8xl text-2xl leading-tight font-semibold mb-2 font-roboto"
+                    class="text-sogblu lg:text-8xl md:text-7xl text-5xl leading-tight font-semibold mb-2 font-roboto align-center hover:underline"
                   >
-                    SERVICES
+                    <a href="./services.html">SERVICES</a>
                   </h5>
                 </div>
                 <h3 class="text-sogblu text-xl leading-tight font-medium mb-2">

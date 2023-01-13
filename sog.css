@@ -60,7 +60,8 @@ body {
   height: 70vh;
 }
 
-.h-75 {
+.h-75,
+.car {
   height: 75vh;
 }
 
@@ -123,5 +124,8 @@ td {
   }
   .h-45-15 {
     height: 15vh;
+  }
+  .car {
+    height: 25vh;
   }
 }
