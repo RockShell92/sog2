@@ -56,10 +56,10 @@
     </script>
   </head>
   <body class="bg-fixed md:bg-cover lg:bg-cover bg-cover">
-    <div class="fixed -z-10 mt-20 h-screen lg:hidden md:hidden visible">
+    <div class="fixed -z-10 mt-20 bg-cover lg:hidden md:hidden visible">
       <img src="./assets/logo/background-all-mob.png" alt="" />
     </div>
-    <div class="fixed -z-10 mt-20 w-screen lg:visible md:visible invisible">
+    <div class="fixed -z-10 mt-20 bg-cover lg:visible md:visible invisible">
       <img src="./assets/logo/background-all.png" alt="" />
     </div>
     <div
@@ -70,7 +70,7 @@
       >
         <div class="noend flex justify-start absolute">
           <div class="hamburg">
-            <nav style="min-height: 10vh">
+            <nav>
               <label
                 id="hamburger-icon"
                 class="text-white fixed flex justify-start text-2xl"
@@ -126,9 +126,9 @@
             <a href="./index.html" class="flex relative left-0 top-16">
               <img
                 src="./assets/logo/blue-logo.svg"
-                class="mr-3 w-60 z-10"
+                class="mr-3 w-40 z-10"
                 id="logo"
-                alt="SOG-Logo"
+                alt="SOG Logo"
               />
             </a>
             <a
@@ -141,7 +141,7 @@
           <div class="flex items-center">
             <a class="awg" href="./awg.html"
               ><img
-                class="w-32"
+                class="w-20"
                 id="awg"
                 src="./assets/awg-logo.png"
                 alt="awg-logo"
@@ -193,128 +193,133 @@
         </div>
       </nav>
     </div>
+    <div class="25vh">d</div>
+    <div class="">
+      <div
+        id="default-carousel"
+        class="relative h-screen"
+        data-carousel="slide"
+      >
+        <!-- Carousel wrapper -->
+        <div class="relative h-screen overflow-hidden rounded-lg h-screen">
+          <!-- Item 1 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <span
+              class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800"
+              >First Slide</span
+            >
+            <img
+              src="./assets/photos/caro/elevate-escalator.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="escelator with imaging on it for elevate"
+            />
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img
+              src="./assets/photos/caro/david-wilson.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="david wilson block sign road view"
+            />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img
+              src="./assets/photos/cardnials-banner.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="banner with kids baseball team name and logo"
+            />
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img
+              src="./assets/photos/caro/armoured-combat.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="armoured combat store sign"
+            />
+          </div>
+          <!-- Item 5 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img
+              src="./assets/photos/caro/elevate-window.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="window with graphic for elevate in vinyl"
+            />
+          </div>
+          <!-- Item 6 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img
+              src="./assets/photos/caro/church-sign.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="box sign for church with two parts, purple and white, road view"
+            />
+          </div>
+          <!-- Item 7 -->
 
-    <div id="default-carousel" class="relative h-screen" data-carousel="slide">
-      <!-- Carousel wrapper -->
-      <div class="relative h-full overflow-hidden rounded-lg h-screen">
-        <!-- Item 1 -->
-        <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img
+              src="./assets/photos/caro/pretty-pic-staged.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="room with picture above leather couch with plants and other decoration around it"
+            />
+          </div>
+        </div>
+
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
           <span
-            class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800"
-            >First Slide</span
+            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
           >
-          <img
-            src="./assets/photos/caro/armoured-combat.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-          <img
-            src="./assets/photos/caro/david-wilson.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-          <img
-            src="./assets/photos/caro/baseball.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-          <img
-            src="./assets/photos/caro/elevate-escalator.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-          <img
-            src="./assets/photos/caro/elevate-window.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <!-- Item 6 -->
-        <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-          <img
-            src="./assets/photos/caro/church-sign.jpg"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <!-- Item 7 -->
-
-        <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-          <img
-            src="./assets/photos/caro/pretty-pic-staged.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+              fill="none"
+              stroke="white"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+              fill="none"
+              stroke="white"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
       </div>
-
-      <!-- Slider controls -->
-      <button
-        type="button"
-        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-prev
-      >
-        <span
-          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
-          <svg
-            aria-hidden="true"
-            class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
-            fill="none"
-            stroke="white"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 19l-7-7 7-7"
-            ></path>
-          </svg>
-          <span class="sr-only">Previous</span>
-        </span>
-      </button>
-      <button
-        type="button"
-        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-next
-      >
-        <span
-          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
-          <svg
-            aria-hidden="true"
-            class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
-            fill="none"
-            stroke="white"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5l7 7-7 7"
-            ></path>
-          </svg>
-          <span class="sr-only">Next</span>
-        </span>
-      </button>
     </div>
-
     <div class="flex lg:m-10 md:m-10 m-5">
       <h1
         class="lg:text-6xl md:text-6xl text-2xl text-white font-poppins justify-center mt-10 text-center"
