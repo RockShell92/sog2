@@ -60,10 +60,22 @@ body {
   height: 70vh;
 }
 
+.h-75 {
+  height: 75vh;
+}
+
+.h-90 {
+  height: 90vh;
+}
+
 .w-50 {
   width: 50vw;
 }
-
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 .duration-15 {
   transition-duration: 1s, 15s;
 }
