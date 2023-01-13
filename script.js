@@ -8,6 +8,10 @@ function scrollFunction() {
   } else {
     document.getElementById("logo").style.width = "15rem";
   }
+  if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
+    document.getElementById("logo").style.width = "7rem";
+  } else {
+  }
 
   if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
     document.getElementById("awg").style.display = "none";
@@ -1669,7 +1673,7 @@ function scrollFunction() {
             };
           Object.defineProperty(e, "__esModule", { value: !0 }),
             (e.initCarousels = void 0);
-          var n = {
+          const n = {
               defaultPosition: 0,
               indicators: {
                 items: [],
