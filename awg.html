@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AWG Catalog</title>
+    <title>Sign Ovation Graphics</title>
     <link
       rel="shortcut icon"
-      href="././assets/awg-logo.png"
+      href="././assets/logo/favicon.svg"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="sog.css" />
@@ -44,8 +44,6 @@
               sans: ["Inter", "sans-serif"],
               poppins: ['"poppins"', "sans-serif"],
               roboto: ['"roboto"', "sans-serif"],
-              atf: ['"alternate-gothic-compressed"', "sans-serif"],
-              bebas: ['"bebas-neue"', "sans-serif"],
             },
             colors: {
               clifford: "#da373d",
@@ -57,32 +55,137 @@
       };
     </script>
   </head>
-  <body class="my-10">
-    <div class="mx-10"><a href="./index.html">back</a></div>
-    <a href="./assets/awg-logo.jpeg" download>here</a>
-    <!-- <img src="./assets/awg-site/p-1.svg" alt="" />
-    <img src="./assets/awg-site/p-2.svg" alt="" />
-    <img src="./assets/awg-site/p-3.svg" alt="" />
-    <img src="./assets/awg-site/p-4.svg" alt="" />
-    <img src="./assets/awg-site/p-5.svg" alt="" />
-    <img src="./assets/awg-site/p-6.svg" alt="" />
-    <img src="./assets/awg-site/p-7.svg" alt="" />
-    <img src="./assets/awg-site/p-8.svg" alt="" />
-    <img src="./assets/awg-site/p-9.svg" alt="" />
-    <img src="./assets/awg-site/p-10.svg" alt="" />
-    <img src="./assets/awg-site/p-11.svg" alt="" />
-    <img src="./assets/awg-site/p-12.svg" alt="" />
-    <img src="./assets/awg-site/p-1.svg" alt="" />
-    <img src="./assets/awg-site/p-1.svg" alt="" />
-    <img src="./assets/awg-site/p-1.svg" alt="" />
-    <img src="./assets/awg-site/p-16.svg" alt="" />
-    <img src="./assets/awg-site/p-17.svg" alt="" />
-    <img src="./assets/awg-site/p-1.svg" alt="" />
-    <img src="./assets/awg-site/p-19.svg" alt="" />
-    <img src="./assets/awg-site/p-events.svg" alt="" />
-    <img src="./assets/awg-site/p-bag-stuffers.svg" alt="" />
-    <img src="./assets/awg-site/p-holiday.svg" alt="" /> -->
+  <body class="bg-fixed bg-center bg-cover">
+    <div
+      class="nav-mob sm:hidden md:visible lg:visible top-0 shadow-sm w-screen sticky z-50"
+    >
+      <nav
+        class="bg-white border-gray-200 bg-[#222d3e] top-nav flex justify-between p-4 background-image-light m-0 z-50"
+      >
+        <div class="noend flex justify-start absolute">
+          <div class="hamburg">
+            <nav>
+              <label
+                id="hamburger-icon"
+                class="text-white fixed flex justify-start text-2xl"
+                for="menu-toggle"
+                >&#9776;</label
+              >
+              <input type="checkbox" id="menu-toggle" />
+              <ul
+                id="menu"
+                class="mob-dropdown text-blue-900 px-8 py-7 font-poppins font-medium text-sogblu background-image-light"
+              >
+                <a href="./index.html"><li>HOME</li></a>
+                <a href="./signs.html"><li>SIGNS</li></a>
+                <a href="./products.html"><li>PRODUCTS</li></a>
+                <a href="./services.html"><li>SERVICES</li></a>
+                <!-- <a href="./contact.html"><li>CONTACT</li></a> -->
+                <a href="./portfolio.html"><li>PORTFOLIO</li></a>
+              </ul>
+            </nav>
+          </div>
+        </div>
 
-    <div>back to top</div>
+        <div class="mx-5 justify-end p-1">
+          <a href="./index.html" class="flex justify-center">
+            <img
+              src="./assets/logo/blue-logo.svg"
+              class="w-20"
+              alt="SOG-Logo"
+            />
+          </a>
+          <a href="tel:6158518222" class="text-xs text-white hover:underline"
+            >(615) 851-8222</a
+          >
+        </div>
+
+        <div class="flex justify-end">
+          <a class="" href="./awg.html"
+            ><img class="w-20" src="./assets/awg-logo.png" alt="awg-logo"
+          /></a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- nav dsk -->
+    <div class="nav-dsk w-screen sticky z-50">
+      <nav
+        class="bg-white border-gray-200 bg-[#222d3e] top-nav background-image-light shadow-lg"
+      >
+        <div
+          class="flex flex-wrap items-center mx-auto max-w-screen-xl px-2 md:px-6 justify-between shadow-lg"
+        >
+          <div class="logo-pn flex items-baseline">
+            <a href="./index.html" class="flex relative left-0 top-16">
+              <img
+                src="./assets/logo/blue-logo.svg"
+                class="mr-3 w-40 z-10"
+                id="logo"
+                alt="SOG Logo"
+              />
+            </a>
+            <a
+              href="tel:6158518222"
+              class="text-xl font-semibold text-white hover:underline font-roboto"
+              id="pn"
+              >(615) 851-8222</a
+            >
+          </div>
+          <div class="flex items-center">
+            <a class="awg" href="./awg.html"
+              ><img
+                class="w-20"
+                id="awg"
+                src="./assets/awg-logo.png"
+                alt="awg-logo"
+            /></a>
+          </div>
+        </div>
+      </nav>
+      <nav class="bg-white bottom-nav shadow-lg">
+        <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
+          <div class="flex items-center justify-end">
+            <ul
+              class="flex flex-row mt-0 mr-6 space-x-8 lg:text-4xl text-3xl font-poppins font-medium"
+            >
+              <li>
+                <a href="./index.html" class="text-sogblu hover:underline"
+                  >HOME</a
+                >
+              </li>
+              <!-- <li>
+                <a href="#about" class="text-sogblu hover:underline">ABOUT</a>
+              </li> -->
+              <li>
+                <a href="./signs.html" class="text-sogblu hover:underline"
+                  >SIGNS</a
+                >
+              </li>
+              <li>
+                <a href="./products.html" class="text-sogblu hover:underline"
+                  >PRODUCTS</a
+                >
+              </li>
+              <li>
+                <a href="./services.html" class="text-sogblu hover:underline"
+                  >SERVICES</a
+                >
+              </li>
+              <!-- <li>
+                <a href="./contact.html" class="text-sogblu hover:underline"
+                  >CONTACT</a
+                >
+              </li> -->
+              <li>
+                <a href="./portfolio.html" class="text-sogblu hover:underline"
+                  >PORTFOLIO</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
   </body>
 </html>

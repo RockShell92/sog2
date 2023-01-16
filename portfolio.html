@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Ovation Graphics</title>
-    <link rel="icon" type="image/x-icon" href="././assets/logo/blue-logo.svg" />
+    <link
+      rel="shortcut icon"
+      href="././assets/logo/favicon.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="sog.css" />
     <link
       rel="stylesheet"
@@ -51,20 +55,16 @@
       };
     </script>
   </head>
-  <body class="bg-fixed md:bg-cover lg:bg-cover bg-cover">
-    <div class="fixed -z-10 mt-20 h-full lg:hidden md:hidden visible">
-      <img src="./assets/logo/background-all-mob.png" alt="" />
-    </div>
-    <div class="fixed -z-10 mt-20 h-full lg:visible md:visible invisible">
-      <img src="./assets/logo/background-all.png" alt="" />
-    </div>
-    <div class="nav-mob sm:hidden md:visible lg:visible fixed w-screen top-0">
+  <body class="bg-fixed bg-center bg-cover">
+    <div
+      class="nav-mob sm:hidden md:visible lg:visible top-0 shadow-sm w-screen sticky z-50"
+    >
       <nav
-        class="bg-white border-gray-200 bg-[#222d3e] top-nav flex justify-between p-4 background-image-light"
+        class="bg-white border-gray-200 bg-[#222d3e] top-nav flex justify-between p-4 background-image-light m-0 z-50"
       >
         <div class="noend flex justify-start absolute">
           <div class="hamburg">
-            <nav style="min-height: 10vh">
+            <nav>
               <label
                 id="hamburger-icon"
                 class="text-white fixed flex justify-start text-2xl"
@@ -109,20 +109,20 @@
     </div>
 
     <!-- nav dsk -->
-    <div class="nav-dsk w-screen pb-4 fixed">
+    <div class="nav-dsk w-screen sticky z-50">
       <nav
-        class="bg-white border-gray-200 bg-[#222d3e] top-nav background-image-light"
+        class="bg-white border-gray-200 bg-[#222d3e] top-nav background-image-light shadow-lg"
       >
         <div
-          class="flex flex-wrap items-center mx-auto max-w-screen-xl px-2 md:px-6 justify-between"
+          class="flex flex-wrap items-center mx-auto max-w-screen-xl px-2 md:px-6 justify-between shadow-lg"
         >
           <div class="logo-pn flex items-baseline">
             <a href="./index.html" class="flex relative left-0 top-16">
               <img
                 src="./assets/logo/blue-logo.svg"
-                class="mr-3 w-60 z-10"
+                class="mr-3 w-40 z-10"
                 id="logo"
-                alt="SOG-Logo"
+                alt="SOG Logo"
               />
             </a>
             <a
@@ -135,7 +135,7 @@
           <div class="flex items-center">
             <a class="awg" href="./awg.html"
               ><img
-                class="w-32"
+                class="w-20"
                 id="awg"
                 src="./assets/awg-logo.png"
                 alt="awg-logo"
@@ -147,7 +147,7 @@
         <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
           <div class="flex items-center justify-end">
             <ul
-              class="flex flex-row mt-0 mr-6 space-x-8 text-3xl font-poppins font-medium"
+              class="flex flex-row mt-0 mr-6 space-x-8 lg:text-4xl text-3xl font-poppins font-medium"
             >
               <li>
                 <a href="./index.html" class="text-sogblu hover:underline"
@@ -187,15 +187,7 @@
         </div>
       </nav>
     </div>
-
-    <div class="h-45-15"></div>
-    <div class="flex m-10">
-      <h1
-        class="lg:text-6xl md:text-6xl text-2xl text-white font-poppins justify-center mt-10 text-center"
-      >
-        PORTFOLIO
-      </h1>
-    </div>
+<div><img src="./assets/photos/portfolio.png" alt="portfolio header"></div>
 
     <div class="background-image-light py-5">
       <div class="grid sm:grid-col-1 lg:grid-col-5 md:grid-col-5 gap-3 mx-10">
