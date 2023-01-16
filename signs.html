@@ -55,7 +55,7 @@
       };
     </script>
   </head>
-  <body class="bg-fixed bg-center bg-cover">
+  <body class="bg-fixed bg-center bg-cover bg-image">
     <div
       class="nav-mob sm:hidden md:visible lg:visible top-0 shadow-sm w-screen sticky z-50"
     >
@@ -114,7 +114,7 @@
         class="bg-white border-gray-200 bg-[#222d3e] top-nav background-image-light shadow-lg"
       >
         <div
-          class="flex flex-wrap items-center mx-auto max-w-screen-xl px-2 md:px-6 justify-between shadow-lg"
+          class="flex flex-wrap items-center mx-auto max-w-screen-xl px-2 md:px-6 justify-between"
         >
           <div class="logo-pn flex items-baseline">
             <a href="./index.html" class="flex relative left-0 top-16">
@@ -197,40 +197,37 @@
               <h6
                 class="text-sogblu lg:text-6xl md:text-6xl text-3xl leading-tight font-semibold mb-2"
               >
-                WHAT WE CAN DO
-              </h6>
+            </h6>
             </div>
-            <div class="grid md:grid-cols-2 sm:grid-cols-1 signs mx-10">
+            <div
+              class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 signs mx-10"
+            >
               <div class="card-txt">
                 <div class="text-soggrey text-lg mb-4">
-                  <p class="lg:text-3xl md:text-3xl text-lg">Vehicle Magnets</p>
-                  <p class="lg:text-3xl md:text-3xl text-lg">
-                    Retractable Banners
-                  </p>
                   <p class="lg:text-3xl md:text-3xl text-lg">Yard Signs</p>
-                  <p class="lg:text-3xl md:text-3xl text-lg">Vinyl Graphics</p>
-                  <p class="lg:text-3xl md:text-3xl text-lg">
-                    Trade Show Displays
-                  </p>
-                  <p class="lg:text-3xl md:text-3xl text-lg">Event Banners</p>
+                  <p class="lg:text-3xl md:text-3xl text-lg">Aluminum signs</p>
+                  <p class="lg:text-3xl md:text-3xl text-lg">Acrylic signs</p>
+                  <p class="lg:text-3xl md:text-3xl text-lg">Monument signs</p>
                 </div>
               </div>
+
               <div class="card-txt">
                 <div class="text-soggrey text-lg mb-4">
-                  <p class="lg:text-3xl md:text-3xl text-lg">Rolled Canvas</p>
+                  <p class="lg:text-3xl md:text-3xl text-lg">Banners</p>
+                  <p class="lg:text-3xl md:text-3xl text-lg">Posters</p>
+                  <p class="lg:text-3xl md:text-3xl text-lg">Window Mesh</p>
                   <p class="lg:text-3xl md:text-3xl text-lg">
-                    Interior & Exterior Banners
+                    Solid Color Cast Vinyl
                   </p>
-                  <p class="lg:text-3xl md:text-3xl text-lg">
-                    Business Signage
-                  </p>
-                  <p class="lg:text-3xl md:text-3xl text-lg">
-                    Vehicle Graphics
-                  </p>
-                  <p class="lg:text-3xl md:text-3xl text-lg">
-                    Campaign Signage
-                  </p>
+                </div>
+              </div>
+
+              <div class="card-txt">
+                <div class="text-soggrey text-lg mb-4">
+                  <p class="lg:text-3xl md:text-3xl text-lg">Printed Vinyl</p>
+                  <p class="lg:text-3xl md:text-3xl text-lg">Magnets</p>
                   <p class="lg:text-3xl md:text-3xl text-lg">Floor Graphics</p>
+                  <p class="lg:text-3xl md:text-3xl text-lg">Pop-Up Banners</p>
                 </div>
               </div>
             </div>
@@ -283,22 +280,25 @@
     <div
       class="footer grid md:grid-cols-3 lg:grid-cols-3 grid-cols-1 background-image-dark p-10 md:text-left lg:text-left text-center"
     >
-      <div class="logo my-2">
+      <div class="logo my-2 flex justify-self-center w-3/4">
         <img class="mx-5 mb-5" src="./assets/logo/blue-logo.svg" alt="" />
       </div>
-      <div class="business-hours my-2">
-        <div class="text-sogblu font-poppins text-4xl">Business Hours</div>
+      <div class="business-hours my-2 flex justify-self-center">
+        <div>
+          <div class="text-sogblu font-poppins text-4xl">Business Hours</div>
 
-        <div class="text-soggrey font-roboto text-2xl">
-          Mon-Thurs: 8am-4pm <br />
-          Fri: 8am-2pm <br />
-          Sat-Sun: Closed <br />
+          <div class="text-white font-roboto text-2xl">
+            Mon-Thurs: 8am-4pm <br />
+            Fri: 8am-2pm <br />
+            Sat-Sun: Closed <br />
+          </div>
         </div>
       </div>
-      <div class="contact my-2">
+      <div class="contact my-2 flex justify-self-center">
         <div>
           <div class="text-sogblu font-poppins text-4xl">Contact</div>
-          <div class="text-soggrey font-roboto lg:text-2xl md:text-2xl text-xl">
+
+          <div class="text-white font-roboto lg:text-2xl md:text-2xl text-xl">
             <a href="tel:6158518222">(615) 851-8222</a> <br />
             <a href="mailto:contact@signovationgraphics.com"
               >contact@signovationgraphics.com</a
@@ -323,6 +323,11 @@
             /></a>
           </div>
         </div>
+      </div>
+      <div
+        class="copywrite text-white font-roboto lg:text-xl md:text-xl text-xl"
+      >
+        &copy; 2022 Sign-Ovation Graphics. All Rights Reserved
       </div>
     </div>
     <script src="./script.js"></script>

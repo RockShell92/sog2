@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
 }
 
-body {
+.bg-image {
   background-image: url(./assets/logo/background-all.png);
 }
 /* always have */
@@ -61,8 +61,7 @@ body {
   height: 70vh;
 }
 
-.h-75,
-.car {
+.h-75 {
   height: 75vh;
 }
 
@@ -101,6 +100,9 @@ td {
   display: none;
 }
 
+.car {
+  height: 75vh;
+}
 @media screen and (max-width: 600px) {
   nav {
     min-height: 8vh;
