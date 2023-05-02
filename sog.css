@@ -8,6 +8,7 @@
 .bg-image {
   background-image: url(./assets/logo/background-all.png);
 }
+
 /* always have */
 .background-image-light {
   background-color: rgb(26, 30, 33);
@@ -104,8 +105,6 @@ td {
 .car {
   height: 75vh;
 }
-
-
 
 @media screen and (max-width: 600px) {
   nav {
