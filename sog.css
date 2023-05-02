@@ -105,9 +105,7 @@ td {
   height: 75vh;
 }
 
-.line-height-2 {
-  line-height: 1.5;
-}
+
 
 @media screen and (max-width: 600px) {
   nav {
